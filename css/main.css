@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.row {
+	max-width: 100%;
+}
+
+#logo {
+	width:10%;
+	padding:1rem 0 1rem 2rem;
+}
+
+/* ============================================================
+  NAV
+============================================================ */
+
+/* PORTFOLIO IMAGES */
+.c-links {
+  width: 100%;
+  overflow: hidden;
+}
+
+.c-links img {
+	max-width:inherit;
+}
+
+.c-links__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -8%;
+}
+
+.c-links__item {
+  width: 33.333%;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.c-links__item:not(:last-of-type) {
+  border-right: 4px solid transparent;
+}
+
+.c-links__item:hover {
+  opacity: 0.5;
+}
+
+.c-links__img {
+  display: block;
+  width: 138%;
+  margin-left: 50%;
+  -webkit-transform: skew(20deg) translate(-50%);
+          transform: skew(20deg) translate(-50%);
+}
+
+
+
+
+
+
+
+
+
+.project-image {
+	width:150%;
+	height:100%;
+	margin: 0 auto;
+}
