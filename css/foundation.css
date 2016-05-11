@@ -2831,6 +2831,26 @@ table.hover tr:nth-of-type(even):hover {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
 
+.flex-video {
+  position: relative;
+  height: 0;
+  padding-bottom: 75%;
+  margin-bottom: 1rem;
+  overflow: hidden; }
+  .flex-video iframe,
+  .flex-video object,
+  .flex-video embed,
+  .flex-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .flex-video.widescreen {
+    padding-bottom: 56.25%; }
+  .flex-video.vimeo {
+    padding-top: 0; }
+
 .orbit {
   position: relative; }
 
@@ -2951,8 +2971,8 @@ table.hover tr:nth-of-type(even):hover {
           flex-flow: row wrap; }
   .row .row {
     max-width: none;
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem; }
+    margin-left: -0.5rem;
+    margin-right: -0.5rem; }
   .row.expanded {
     max-width: none; }
   .row.collapse > .column, .row.collapse > .columns {
@@ -2963,8 +2983,8 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-flex: 1 1 0px;
       -ms-flex: 1 1 0px;
           flex: 1 1 0px;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   min-width: 0; }
 
 .column.row.row, .row.row.columns {
@@ -3199,8 +3219,8 @@ table.hover tr:nth-of-type(even):hover {
   padding-right: 0; }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem; }
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
 
 @media screen and (min-width: 40em) {
   .medium-1 {
@@ -3405,8 +3425,8 @@ table.hover tr:nth-of-type(even):hover {
     padding-left: 0;
     padding-right: 0; }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; } }
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; } }
 
 @media screen and (min-width: 64em) {
   .large-1 {
@@ -3611,8 +3631,8 @@ table.hover tr:nth-of-type(even):hover {
     padding-left: 0;
     padding-right: 0; }
   .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; } }
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; } }
 
 .shrink {
   -webkit-flex: 0 0 auto;
