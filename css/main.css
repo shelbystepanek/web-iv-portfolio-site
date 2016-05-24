@@ -31,16 +31,33 @@
 */
 
 /* ========= 1. Typography ============*/
-h1, h2, body {
-	font-family: 'Oswald', sans-serif;
-	color:#ffd8ef;
+h1 {
+	font-size:60px;
+	font-weight: bold;
 }
+
+h2 {
+	font-size:48px;
+	margin-top: -26px;
+}
+
+h2, footer p {
+	font-weight:lighter;
+}
+
 
 body {
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
+	color:#b29150;
 }
 
-h1, h2, a {
+p {
+	margin-top: 10px;
+}
+
+h1, h2, a, footer p {
+	font-family: 'Oswald', sans-serif;
 	text-transform:uppercase;
 }
 
@@ -53,9 +70,14 @@ h1, h2, a {
 	float: right;
 }
 
-.center, .menu {
+.center {
 	text-align:center;
 }
+
+footer p {
+	font-size:12px;
+}
+
 
 /* ========= 1.1 Body ============*/
 /* ========= 1.2 Headings ============*/
@@ -69,7 +91,6 @@ li {
 
 footer li {
 	display:inline-block;
-	text-align:center;
 }
 
 /* ========= 2.1 Main ============*/
@@ -81,15 +102,6 @@ footer li {
 /* ========= 3.2 Site Buttons ============*/
 .button {
 	margin:0;
-}
-
-.button {
-    background: #ec008c;
-}
-
-.button:hover {
-	background:#3b0023;
-	color:#ec008c;
 }
 
 /* ========= 3.4 Site Header ============*/
@@ -124,10 +136,6 @@ footer li {
 }
 
 
-
-
-
-
 /* ========= 4.1 Sprites ============*/
 /* ========= 4.2 Background Images ============*/
 /* ========= 5. Utility ============*/
@@ -136,17 +144,26 @@ body {
 	background: #14000c; 
 }
 
-a {
-	color:#ec008c;
-}
-
-a:hover {
-	color:#af106b;
-}
-
 .button {
 	color: #14000c;
 }
+
+h1, a, .button:hover {
+	color:#ec008c;
+}
+
+.button {
+    background: #ec008c;
+}
+
+.button:hover {
+	background:#3b0023;
+}
+
+h2, a:hover {
+	color:#af106b;
+}
+
 /* ========= 5.2 Floats, Positions, Displays ============*/
 /* ========= 6. Media Queries ============*/
 /* ========= 7. Structure ============*/
@@ -155,6 +172,15 @@ a:hover {
 	background-color: transparent;
 }
 /* ========= 7.2 Footer ============*/
+
+footer nav ul {
+	margin: 0 auto;
+	text-align:center;
+}
+	
+footer nav ul li {
+	padding: 0 10px;
+}
 
 /* ========= 7.3 Positions, Floats, Widths ============*/
 .test {
