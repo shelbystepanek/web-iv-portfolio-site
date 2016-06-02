@@ -105,13 +105,17 @@ footer li {
 	padding: 2px;
 }
 
+#about {
+    padding: 40px;
+    padding-right: 100px;
+}
+
 
 /* ========= 3.2 Site Buttons ============*/
 .button {
-	margin:0;
-	margin-top:10px;
-	width:100%;
-	text-align: right;
+	margin: 0;
+    width: 100%;
+    text-align: right;
 }
 
 /* ========= 3.4 Site Header ============*/
@@ -138,14 +142,16 @@ footer li {
 }
 
 #contact {
-    float: right;
     position: relative;
-    top: -54px;
+    top: -45px;
     z-index: 0;
-	width: 100%;
+    width: 100%;
 	
 }
 
+#about-contact {
+	padding: 67px;
+}
 
 /* ========= 4.1 Sprites ============*/
 /* ========= 4.2 Background Images ============*/
