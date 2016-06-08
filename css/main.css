@@ -1,60 +1,25 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* ========= TOC ============*/   
- 
-/*
-1. Typography
-	1.1 Body
-	1.2 Headings
-	1.3 Buttons
-	1.4 Forms
-2. Navigation Menu
-	2.1 Main
-3. Structure
-	3.1 Site Padding and Margin
-	3.2 Site Buttons
-	3.3 Site Form
-	3.4 Site Header
-	3.5 Site Footer
-4. Media
-	4.1 Sprites
-	4.2 Background Images
-5. Utility
-	5.1 Colors
-	5.2 Floats, Positions, Displays
-6. Media Queries
-7. Structure
-	7.1 Header
-	7.2 Footer
-	7.3 Positions, Floats, Widths
-*/
+/* ========= TOC ==========================================*/   
+/* ========= 1. Typography ===============================*/
+/* ========= 1.1 Body ===================================*/
+/* ========= 1.2 Headings ==============================*/
+/* ========= 2. Navigation Menu =======================*/
+/* ========= 3. Structure ============================*/
+/* ========= 3.1 Site Padding and Margin ============*/
+/* ========= 4. Media ==============================*/
+/* ========= 5. Utility ===========================*/
+/* ========= 5.1 Colors ==========================*/
+/* ========= 5.2 Floats =========================*/
+/* ========= 5.3 Positions =====================*/
+/* ========= 5.4 Displays =====================*/
+/* ========= 5.5 Alignments ==================*/
+/* ========= 6. Media Queries ===============*/
 
 /* ========= 1. Typography ============*/
-h1 {
-	font-size: 40px;
-    font-weight: bold;
-    line-height: 45px;
-	margin-top:10px;
-}
-
-h2 {
-	font-size:36px;
-}
-
 h2, footer p {
 	font-weight:lighter;
-}
-
-
-body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	color:#b29150;
-}
-
-p {
-	margin-top: 10px;
 }
 
 h1, h2, a, footer p {
@@ -62,45 +27,51 @@ h1, h2, a, footer p {
 	text-transform:uppercase;
 }
 
-#button-left {
-	text-align: left;
-}
-
-#button-right {
-	text-align: right;
-	float: right;
-}
-
-.center {
-	text-align:center;
+/* ========= 1.1 Body ============*/
+body {
+	color:#b29150;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
 }
 
 footer p {
-	font-size:12px;
+	font-size: 12px;
 }
 
-
-/* ========= 1.1 Body ============*/
 /* ========= 1.2 Headings ============*/
-/* ========= 1.3 Buttons ============*/
+h1 {
+	font-size: 40px;
+    font-weight: bold;
+    line-height: 45px;
+}
 
-/* ========= 1.4 Forms ============*/
+h2 {
+	font-size:36px;
+}
+
 /* ========= 2. Navigation Menu ============*/
 li {
 	list-style-type: none;
 }
 
-footer li {
-	display:inline-block;
+/* ========= 3. Structure ============*/
+.logo, img, #contact, .button, .c-links {
+	width:100%;
 }
 
+.logo {
+	height:100%;
+}
+
+.c-links img {
+	max-width:inherit;
+}
+
+/* ========= 3.1 Site Padding and Margin ============*/
 .menu li a {
     padding: 0.7rem 1.3rem;
 }
 
-/* ========= 2.1 Main ============*/
-/* ========= 3. Structure ============*/
-/* ========= 3.1 Site Padding and Margin ============*/
 .column, .columns {
 	padding: 2px;
 }
@@ -110,120 +81,31 @@ footer li {
     padding-right: 100px;
 }
 
-
-/* ========= 3.2 Site Buttons ============*/
-.button {
-	margin: 0;
-    width: 100%;
-    text-align: right;
-}
-
-/* ========= 3.4 Site Header ============*/
-/* ========= 3.5 Site Footer ============*/
-
-
-
-/* ========= 4. Media ============*/
-.logo {
-	width:100%;
-	height:100%;
-	display:block;
-	margin: 0 auto;
-}
-
-
-/* ============================================================
-  HOME Z INDEX
-============================================================ */
-
-#bio-photo {
-    position: relative;
-    z-index: 1;
-}
-
-#contact {
-    position: relative;
-    top: -45px;
-    z-index: 0;
-    width: 100%;
-	
-}
-
 #about-contact {
 	padding: 67px;
 }
 
-/* ========= 4.1 Sprites ============*/
-/* ========= 4.2 Background Images ============*/
-/* ========= 5. Utility ============*/
-/* ========= 5.1 Colors ============*/
-body {
-	background: #14000c; 
-}
-
-.button {
-	color: #14000c;
-	
-}
-
-h1, a, .button:hover {
-	color:#ec008c;
-}
-
-.button {
-    background: #ec008c;
-}
-
-.button:hover {
-	background:#3b0023;
-}
-
-h2, a:hover {
-	color:#af106b;
-}
-
-/* ========= 5.2 Floats, Positions, Displays ============*/
-/* ========= 6. Media Queries ============*/
-/* ========= 7. Structure ============*/
-/* ========= 7.1 Header ============*/
-.top-bar, .top-bar ul {
-	background-color: transparent;
-}
-/* ========= 7.2 Footer ============*/
-
-footer nav ul {
-	margin: 0 auto;
-	text-align:center;
-}
-	
 footer nav ul li {
 	padding: 0 10px;
 }
 
+h1, p {
+	margin-top: 10px;
+}
+
+footer nav ul, .logo, .button {
+	margin: 0 auto;
+}
 
 footer {
-	margin-top:25px;
-}
-/* ========= 7.3 Positions, Floats, Widths ============*/
-
-img {
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
+	margin-top: 25px;
 }
 
-/* ============================================================
-  SKEWED IMAGES
-============================================================ */
+/* ========= 4. Media ============*/
 .c-links {
-  width: 100%;
   overflow: hidden;
 }
 
-.c-links img {
-	max-width:inherit;
-}
 
 .c-links__content {
   display: -webkit-box;
@@ -246,29 +128,94 @@ img {
   border-right: 4px solid transparent;
 }
 
-.work-hover:hover {
-  opacity: 0.5;
-}
-
-.c-links__img:hover {
+.work-hover:hover, .c-links__img:hover {
   opacity: 0.5;
 }
 
 .c-links__img {
-  display: block;
   width: 138%;
   margin-left: 50%;
   -webkit-transform: skew(20deg) translate(-50%);
           transform: skew(20deg) translate(-50%);
 }
 
+/* ========= 5. Utility ============*/
+/* ========= 5.1 Colors ============*/
+body {
+	background: #14000c; 
+}
 
+.button {
+    background: #ec008c;
+	color: #14000c;
+}
+
+.button:hover {
+	background:#3b0023;
+}
+
+h1, a, .button:hover {
+	color:#ec008c;
+}
+
+h2, a:hover {
+	color:#af106b;
+}
+
+.top-bar, .top-bar ul {
+	background-color: transparent;
+}
+
+/* ========= 5.2 Floats ============*/
+#button-right {
+	float: right;
+}
+
+/* ========= 5.3 Positions ============*/
+#bio-photo, #contact {
+	position: relative;
+}
+
+#bio-photo {
+    z-index: 1;
+}
+
+#contact {
+    top: -45px;
+    z-index: 0;
+}
+
+/* ========= 5.4 Displays ============*/
+.logo, .c-links__img {
+	display: block;
+}
+
+footer li {
+	display:inline-block;
+}
+
+/* ========= 5.5 Alignments ============*/
+#button-left {
+	text-align: left;
+}
+
+.button, #button-right {
+	text-align: right;
+}
+
+.center, footer nav ul {
+	text-align: center;
+}
+
+/* ========= 6. Media Queries ============*/
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-	.logo {max-width:60%; margin:0 auto;}
+	.logo {max-width:60%; margin: 0 auto;}
 	
-	.button {margin-top:75px;}
+	a .button {margin-top:75px;}
+	
+	.top-bar-right {margin-left: 10px;}
 }
 
 /* Medium and up */
@@ -278,17 +225,10 @@ img {
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	.logo {max-width:300px;}
-	
-	.button {margin-top:75px;}
+	a .button {margin-top:75px;}
 }
 
 /* Large and up */
 @media screen and (min-width: 64em) {
 	.logo {max-width:250px;}
-}	
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-	
 }
